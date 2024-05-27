@@ -14,8 +14,8 @@ describe('automationTaskCypress', () => {
     cy.get('.fontBig').should('contain', 'Harry Potter'); // select name you can change it to any available name if necessary
     
     cy.get('.center').contains('Account Number :').parent().find('strong').then((element) => {
-      cy.wrap(element).should('contain', 'Dollar');   // confirm if dollar
-    });
+      cy.wrap(element).should('contain', 'Dollar'); 
+    });  // confirm if dollar
 
     cy.get('button[ng-click="deposit()"]').click(); // click deposit
     
