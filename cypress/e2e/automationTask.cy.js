@@ -29,7 +29,7 @@ describe('automationTaskCypress', () => {
     
     cy.get('button[ng-click="transactions()"]').click(); // click on Transactions
     
-    cy.get('table tbody tr').first().find('td').eq(1).should('contain.text', depositAmount); // confirm amount used in step 9 is displayed under "Amount" column
+    cy.get('table tbody tr').first().find('td').eq(1).should('contain.text', depositAmount); // confirm amount used before is displayed under "Amount" column
     
     cy.get('table tbody tr').first().find('td').eq(2).should('contain.text', 'Credit'); // confirm transaction type is credit
     
