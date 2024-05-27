@@ -11,7 +11,7 @@ describe('automationTaskCypress', () => {
 
     cy.get('.btn-default').contains('Login').click(); // click login
     
-    cy.get('.fontBig').should('contain', 'Harry Potter'); // select name you can change it to any available name if necessary
+    cy.get('.fontBig').should('contain', 'Harry Potter'); // confirm if name the same as selected before
     
     cy.get('.center').contains('Account Number :').parent().find('strong').then((element) => {
       cy.wrap(element).should('contain', 'Dollar'); 
